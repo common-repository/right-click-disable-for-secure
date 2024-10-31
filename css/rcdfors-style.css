@@ -1,0 +1,354 @@
+/*
+* Right Click Disable for  Secure Admin Styles
+*/
+
+/* Variables */
+:root{
+    --PrimaryColor: #1abc9c;
+    --SecondaryColor: #ccc;
+    --BlackColor: #000;
+    --WhiteCoolor:  #fff;
+}
+.rcdfors-option h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+.rcdfors-option h2{
+    font-size: 26px;
+}
+.rcdfors-option h3{
+    font-size: 24px;
+}
+.rcdfors-option h4{
+    font-size: 22px;
+}
+.rcdfors-option h5{
+    font-size: 20px;
+}
+.rcdfors-option h6{
+    font-size: 18px;
+}
+.rcdfors-option a:focus,
+.rcdfors-option a:hover{
+    box-shadow: none;
+    outline: none;
+}
+
+
+/* Plguin Option */
+.rcdfors-option{
+    margin: 20px 20px 20px 0;
+    font-size: 15px;
+}
+.rcdfors-option .container{
+    background-color: var(--WhiteCoolor);
+    padding: 15px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.rcdfors-option .container h2.title{
+    border-left: 4px solid var(--PrimaryColor);
+    border-radius: 5px;
+    height: 25px;
+    padding: 5px 0 3px 8px;
+    margin-bottom: 15px;
+}
+.rcdfors-option .container .rcdfors-details{
+    width: 62%;
+    float: left;
+    -webkit-box-shadow: 0 0 8px var(--SecondaryColor);
+            box-shadow: 0 0 8px var(--SecondaryColor);
+    border-radius: 5px;
+    padding: 20px 15px;
+}
+.rcdfors-option .container .author-details{
+    width: 30%;
+    float: right;
+    overflow: hidden;
+    -webkit-box-shadow: 0 0 8px var(--SecondaryColor);
+            box-shadow: 0 0 8px var(--SecondaryColor);
+    border-radius: 5px;
+    padding: 20px 15px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+    .rcdfors-option .container .rcdfors-details{
+        width: 60%;
+    }
+    .rcdfors-option .container .author-details{
+        width: 30%;
+    }
+}
+@media only screen and (min-width: 700px) and (max-width: 991.99px){
+    .rcdfors-option .container .rcdfors-details{
+        width: 95%;
+        margin: 0 0 25px 0;
+        float: none;
+    }
+    .rcdfors-option .container .author-details{
+        width: 70%;
+        margin: auto;
+        float: none;
+    }
+}
+@media only screen and (max-width: 699.99px){
+    .rcdfors-option .container .rcdfors-details{
+        width: 90%;
+        margin: 0 0 25px 0;
+        float: none;
+    }
+    .rcdfors-option .container .author-details{
+        width: 70%;
+        margin: auto;
+        float: none;
+    }
+    .rcdfors-option .container h2.title{
+        font-size: 20px;
+    }
+}
+
+.rcdfors-option .container .rcdfors-details form p,
+.rcdfors-option .container .rcdfors-details form label{
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: .1px;
+    display: block;
+    margin-bottom: 1px;
+}
+.rcdfors-option .container .rcdfors-details form .keybuttons1,
+.rcdfors-option .container .rcdfors-details form p.inputradio1{
+    margin: 5px 0;
+}
+
+.rcdfors-option .container .rcdfors-details form .keybuttons label,
+.rcdfors-option .container .rcdfors-details form .keybuttons1 label,
+.rcdfors-option .container .rcdfors-details form p.inputradio1 label,
+.rcdfors-option .container .rcdfors-details form p.inputradio label{
+    display: inline-block;
+}
+.rcdfors-option .container .rcdfors-details form .keybuttons input,
+.rcdfors-option .container .rcdfors-details form .keybuttons1 input,
+.rcdfors-option .container .rcdfors-details form p.inputradio1 input,
+.rcdfors-option .container .rcdfors-details form p.inputradio input{
+    display: inline-block;
+    margin-bottom: 0;
+}
+.rcdfors-option .container .rcdfors-details form option,
+.rcdfors-option .container .rcdfors-details form select,
+.rcdfors-option .container .rcdfors-details form input{
+    width: 90%;
+    font-size: 15px;
+    font-weight: normal;
+    display: block;
+    margin-bottom: 10px;
+    border: 1px solid var(--SecondaryColor);
+    outline: none;
+    color: var(--BlackColor);
+    -webkit-box-shadow: 0 0 5px var(--SecondaryColor);
+            box-shadow: 0 0 5px var(--SecondaryColor);
+    padding: 6px 8px;
+    border-radius: 5px;
+}
+.rcdfors-option .container .rcdfors-details form option:focus,
+.rcdfors-option .container .rcdfors-details form select:focus,
+.rcdfors-option .container .rcdfors-details form input:focus{
+    -webkit-box-shadow: 0 0 7px var(--SecondaryColor);
+            box-shadow: 0 0 7px var(--SecondaryColor);
+}
+.rcdfors-option .container .rcdfors-details form input::-webkit-input-placeholder{
+    font-size: 14px;
+    text-transform: capitalize;
+    font-style: italic;
+    color: var(--BlackColor);
+    opacity: .5;
+}
+.rcdfors-option .container .rcdfors-details form input::-moz-placeholder{
+    font-size: 14px;
+    text-transform: capitalize;
+    font-style: italic;
+    color: var(--BlackColor);
+    opacity: .5;
+}
+.rcdfors-option .container .rcdfors-details form input:-ms-input-placeholder{
+    font-size: 14px;
+    text-transform: capitalize;
+    font-style: italic;
+    color: var(--BlackColor);
+    opacity: .5;
+}
+.rcdfors-option .container .rcdfors-details form input::-ms-input-placeholder{
+    font-size: 14px;
+    text-transform: capitalize;
+    font-style: italic;
+    color: var(--BlackColor);
+    opacity: .5;
+}
+.rcdfors-option .container .rcdfors-details form input::placeholder{
+    font-size: 14px;
+    text-transform: capitalize;
+    font-style: italic;
+    color: var(--BlackColor);
+    opacity: .5;
+}
+.rcdfors-option .container .rcdfors-details form small{
+    font-style: italic;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--BlackColor);
+    opacity: .7;
+    margin-bottom: 10px;
+    display: block;
+}
+.rcdfors-option .container .rcdfors-details form input[type="radio"]{
+    width: auto;
+    display: inline-block;
+}
+.rcdfors-option .container .rcdfors-details form input[type="submit"]{
+    width: auto;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .2px;
+    padding: 8px 40px;
+    color: var(--PrimaryColor);
+    background: var(--WhiteCoolor);
+    border: 2px solid var(--PrimaryColor);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    cursor: pointer;
+    margin-top: 18px;
+    -webkit-transition: .4s ease all;
+    -o-transition: .4s ease all;
+    transition: .4s ease all;
+}
+.rcdfors-option .container .rcdfors-details form input[type="submit"]:hover{
+    background-color: var(--PrimaryColor);
+    color: var(--WhiteCoolor);
+}
+.rcdfors-option .container .rcdfors-details form input[type=radio]:checked::before{
+    background-color: var(--PrimaryColor) !important;
+}
+
+/* Author CSS */
+.rcdfors-option .container .author-details img{
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+    border: 3px solid var(--PrimaryColor);
+}
+.rcdfors-option .container .author-details h4.author-name {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 25px 5px 18px;
+}
+.rcdfors-option .container .author-details p{
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.6em;
+}
+.rcdfors-option .container .author-details .donate-btn a{
+    text-decoration: none;
+}
+.rcdfors-option .container .author-details .donate-btn a h4{
+    padding: 8px 10px 10px;
+    text-align: center;
+    background: var(--PrimaryColor);
+    color: var(--WhiteCoolor);
+    font-size: 23px;
+    border-radius: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: .4s ease all;
+    -o-transition: .4s ease all;
+    transition: .4s ease all;
+}
+.rcdfors-option .container .author-details .donate-btn a h4:hover{
+    color: var(--SecondaryColor);
+}
+.rcdfors-option .container .author-details .donate-btn a h4 span{
+    font-size: 25px;
+    margin-right: 5px;
+}
+
+.rcdfors-option .container .author-details h3.rcdfors-social-title{
+    margin: 20px 0;
+    font-size: 20px;
+    border-left: 4px solid var(--PrimaryColor);
+    height: 24px;
+    padding: 5px 0 0 8px;
+    border-radius: 5px;
+}
+.rcdfors-option .container .author-details .social-icons{
+    text-align: center;
+}
+.rcdfors-option .container .author-details .social-icons a{
+    text-decoration: none;
+    margin-right: 6px;
+    display: inline-block;
+}
+.rcdfors-option .container .author-details .social-icons a img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid var(--PrimaryColor);
+    -webkit-transition: .3s ease all;
+    -o-transition: .3s ease all;
+    transition: .3s ease all;
+}
+.rcdfors-option .container .author-details .social-icons a img:hover{
+    background-color: var(--SecondaryColor);
+}
+.rcdfors-option .container .author-details .thank-you{
+    text-align: center;
+    margin: 35px 0 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.rcdfors-option .container .author-details .thank-you span{
+    display: inline-block;
+    font-size: 35px;
+    color: red;
+}
+.rcdfors-option .container .author-details .thank-you h5{
+    font-size: 16px;
+    text-transform: capitalize;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+
+/* Responsive CSS */
+@media only screen and (max-width: 600px){
+    .rcdfors-option .container .rcdfors-details{
+        width: 90%;
+        margin: 0 auto 25px auto;
+        float: none;
+    }
+    .rcdfors-option .container .author-details{
+        width: 90%;
+        margin: auto;
+        float: none;
+    }
+}
+@media only screen and (max-width: 782px){
+    .rcdfors-option .container .rcdfors-details form input[type="radio"]{
+        width: 25px;
+        height: 25px;
+    }
+}
